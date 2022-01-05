@@ -67,8 +67,8 @@ export default {
                 this.results.q1[1] = text[Math.ceil(text.length / 4) - 1];
                 this.results.q2[1] = (text[text.length / 2 - 1] + text[text.length / 2]) / 2;
                 this.results.q3[1] = text[Math.ceil(text.length * 3 / 4) - 1];
-                this.results.allRange[1] = this.results.q3[1] - this.results.q1[1];
-                this.results.interquartile[1] = text[text.length - 1] - text[0];
+                this.results.interquartile[1] = this.results.q3[1] - this.results.q1[1];
+                this.results.allRange[1] = text[text.length - 1] - text[0];
             } else {
                 this.results.q1[1] = text[Math.ceil(text.length / 4) - 1];
                 this.results.q2[1] = text[Math.ceil(text.length / 2) - 1];
